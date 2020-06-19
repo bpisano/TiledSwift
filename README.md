@@ -1,3 +1,3 @@
 # TiledSwift
 
-A description of this package.
+A framework to import tile map from Tiled into your swift project.
