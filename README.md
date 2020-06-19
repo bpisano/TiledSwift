@@ -14,8 +14,8 @@ and then specify "TiledSwift" as a dependency of the Target in which you wish to
 ## Usage
 
 With TiledSwift, you can import your Tiled maps, into your Swift project easily. TiledSwift supports Tiled maps with multiple tilset, multiple layers and also object groups. For example, the following map can be integrated in your project with TiledSwift:
+![alt text](Ressources/Tiled.png)
 ![alt text](Ressources/Project.png)
-![alt text](https://github.com/bpisano/TiledSwift.git/Ressources/Project.png)
 
 To do so, follow the instructions.
 
