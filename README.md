@@ -44,7 +44,7 @@ addChild(tileMapNode)
 ```
 
 ### 4. Configuring the map
-You can access different property in a `TileMapNode` to customize it the way you want.
+You can access different properties in a `TileMapNode` to customize it the way you want.
 ```swift
 tileMapNode.layer(named: "Ground") // Return the layer "Ground" where you can access the SKTileMap generated.
 tileMapNode.objectGroup(named: "Collisions") // Return the object groups "Collisions" where you can access the SKSpriteNode generated.
