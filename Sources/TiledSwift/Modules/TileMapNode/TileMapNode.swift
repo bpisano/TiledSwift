@@ -14,7 +14,7 @@ public final class TileMapNode: SKSpriteNode, TileMapNodeRepresentable {
     private(set) public var layers: [TileMapNodeLayer] = []
     private(set) public var objectGroups: [TileMapNodeObjectGroup] = []
     
-    init(tileMap: TileMap) {
+    public init(tileMap: TileMap) {
         super.init(texture: nil, color: .clear, size: tileMap.nodeSize)
         configureLayers(from: tileMap)
         configureObjects(from: tileMap)
