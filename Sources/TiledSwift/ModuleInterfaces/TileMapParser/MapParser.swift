@@ -9,7 +9,7 @@
 import Foundation
 
 /// A protocol that represent an object capable of parsing a `TileMap`.
-protocol MapParser {
+public protocol MapParser {
     
     /// Parse a tile map.
     /// - Parameter completion: a completion handler called at the end of the parsing.

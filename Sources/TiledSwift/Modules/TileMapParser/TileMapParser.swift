@@ -16,13 +16,13 @@ public final class TileMapParser: NSObject, MapParser {
     private var currentElement: ParsingElement = .none
     private var map: XMLTileMap?
     
-    init(fileNamed fileName: String, extension fileExtension: String = "tmx") throws {
+    public init(fileNamed fileName: String, extension fileExtension: String = "tmx") throws {
         guard let fileUrl = Bundle.main.url(forResource: fileName, withExtension: fileExtension) else { throw Error.noFileNamed(fileName: fileName, extension: fileExtension) }
         let fileData: Data = try Data(contentsOf: fileUrl)
         self.parser = XMLParser(data: fileData)
     }
     
-    func parseMap(_ completion: @escaping (_ map: TileMap?) -> Void) {
+    public func parseMap(_ completion: @escaping (_ map: TileMap?) -> Void) {
         didFinishParsing = completion
         parser.delegate = self
         parser.parse()
